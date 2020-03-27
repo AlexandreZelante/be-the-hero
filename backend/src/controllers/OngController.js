@@ -1,6 +1,7 @@
 const connection = require("../database/connection");
 const crypto = require("crypto");
 
+//Listagem, 1 item, criacao, alteração e delete
 module.exports = {
   async index(req, res) {
     const ongs = await connection("ongs").select("*");
